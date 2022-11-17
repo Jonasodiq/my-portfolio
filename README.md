@@ -1,4 +1,4 @@
-# sass-base-school-2022
+# My portfolio
 
 ## Clone to update base system
 `git clone https://github.com/Jonasodiq/sass-base-school-2022.git .`
@@ -6,4 +6,4 @@
 `git clone https://github.com/Jonasodiq/sass-base-school-2022.git . &&rm -rf .git`
 
 ## Develop
-`sass --watch src/scss/style.scss style.css`# my-portfolio
+`sass --watch src/scss/style.scss style.css`
