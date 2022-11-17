@@ -2,9 +2,11 @@
     --section-gap: 8rem;
     --section-gap-inner: calc( var(--section-gap) * 0.75);
 
+    --gap-xxl: 5rem;
     --gap-xl: 4rem;
     --gap-l: 3rem;
     --gap-m: 2rem;
+    --gap-sm:1.4rem;
     --gap-s: 1rem;
 
     --border-radius: 0px;
@@ -13,12 +15,13 @@
     --color-dark-200: #444;
     --color-dark-300: #666;
     --color-dark-500: #888;
-    --color-dark-600: #999;
+    --color-dark-600: #9A9892;
     --color-dark-700: #b5b5b5;
     --color-dark-800: #d5d5d5;
     --color-dark-900: #f1f1f1;
 
-    --color-accent: #009fbb;
+    --color-red: #f11111;
+    --color-accent: #f11111;
     --color-accent-200: #009fbb;
     --color-accent-300: #009fbb;
     --color-accent-400: #009fbb;
@@ -28,7 +31,7 @@
     --color-accent-800: #009fbb;
     --color-accent-900: #009fbb;
 
-    --color-light: #efead8;
+    --color-light: #fffcf2;
     --color-light-200: #efead8;
     --color-light-300: #efead8;
     --color-light-400: #efead8;
@@ -39,11 +42,12 @@
     --color-light-900: #efead8;
     
 
-    --font-sans: 'Arial', sans-serif;
+    --font-sans: 'fieldwork', sans-serif;
     --font-serif: 'Georgia', serif;
 
     --line-height: 1.5;
 
+    --font-big: 10.125rem;
     --font-scale: 1.25;
     --font-size: 1rem;
 

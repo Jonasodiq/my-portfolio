@@ -1,0 +1,11 @@
+.footer {
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__content {
+        color: #8c8c8c;
+    }
+}
+    

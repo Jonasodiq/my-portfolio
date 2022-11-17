@@ -1,0 +1,21 @@
+.about {
+    background-color: var(--color-light);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    &__social {
+        margin-top: 16px;
+    }
+    &__content {
+        max-width: 38.75rem;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.66;
+    }
+}

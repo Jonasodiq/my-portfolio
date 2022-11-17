@@ -1,0 +1,15 @@
+.work {
+    background-color: var(--color-light);
+    &__header {
+        margin-bottom: var(--gap-xxl);
+        max-width: 40rem;
+    }
+
+    &__title {
+        margin: 0;
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.66;
+    }
+}

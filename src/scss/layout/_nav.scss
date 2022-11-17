@@ -1,0 +1,34 @@
+.menu {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: var(--gap-l);
+    }
+    &__link {
+        color: #fffcf2;
+        transition: color 0.2s;
+        &:hover {
+            color: #f11448
+        }
+    }
+    &__item--current{
+        font-weight: 700;
+    }
+    &__item--buttom &__link {
+        background-color: #fffcf2;
+        color: var(--color-dark);
+        font-weight: 700;
+        padding: 0.5rem 1rem 0.6rem;
+        display: block;
+        border: 2px solid transparent;
+        transition: all 0.2s;
+        &:hover {
+            background: #222;
+            color:#fffcf2;
+            border: 2px solid #fffcf2
+        }
+    }
+}

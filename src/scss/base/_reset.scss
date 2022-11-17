@@ -1,12 +1,24 @@
 * {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--color-dark);
+    font-family:var(--font-sans)
 }
 
 img {
     max-width: 100%;
+}
+
+figure {
+    margin: 0;
 }
