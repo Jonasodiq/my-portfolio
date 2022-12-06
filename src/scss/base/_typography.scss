@@ -11,14 +11,14 @@ h5 {font-size: 1.4rem;}
 h6 {font-size: 1rem;}
 
 p, a, li{
-    color: #9A9892;
-    line-height: var(--line-heigt);
+    color: var(--color-dark-600);
+    line-height: var(--line-height);
     font-size: var(--font-size-1);
 }
 
 
 a {
-    color: #f11111;
+    color: var(--color-accent);
     text-decoration: none;
     
     &.arrow-link {
@@ -28,7 +28,7 @@ a {
         gap: var(--gap-s);
         transition: color 0.2s;
         &:hover {
-            color: #222;
+            color: var(--color-dark);
             & svg {
                 transform: translate(0.5rem, 0.15rem);
             }
@@ -40,10 +40,10 @@ a {
     }
     
     &.arrow-link--white line{
-        stroke: #fffcf2;
+        stroke: var(--color-light);
     }
     &.arrow-link--white:hover {
-        color: #fffcf2;
+        color: var(--color-light);
     }
 }
 
@@ -64,7 +64,7 @@ a {
         justify-content: center;
         transition: background-color 0.2s;
         &:hover {
-            background-color: #f11448;
+            background-color: var(--color-accent);
         }
     }
 }
@@ -77,12 +77,12 @@ a {
     height: 48px;
     border-radius: 100%;
     border: 0;
-    background: #fffcf2;
+    background: var(--color-light);
     transition: background-color 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
     &:hover {
-        background-color: #f11448;
+        background-color: var(--color-accent);
     }
 }

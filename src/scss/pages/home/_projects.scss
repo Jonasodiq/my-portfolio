@@ -9,7 +9,7 @@
     &__content {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 5rem 3rem;
+        gap: var(--gap-xxl) var(--gap-l);
     }
     &__title {
         color: var(--color-light);
@@ -60,7 +60,7 @@
         font-weight: 700;
         transition: color 0.2s;
         &:hover {
-            color: #fffcf2;
+            color: var(--color-light);
         }
     }
 }

@@ -8,17 +8,17 @@
         gap: var(--gap-l);
     }
     &__link {
-        color: #fffcf2;
+        color: var(--color-light);
         transition: color 0.2s;
         &:hover {
-            color: #f11448
+            color: var(--color-accent);
         }
     }
     &__item--current{
         font-weight: 700;
     }
     &__item--buttom &__link {
-        background-color: #fffcf2;
+        background-color: var(--color-light);
         color: var(--color-dark);
         font-weight: 700;
         padding: 0.5rem 1rem 0.6rem;
@@ -26,9 +26,9 @@
         border: 2px solid transparent;
         transition: all 0.2s;
         &:hover {
-            background: #222;
-            color:#fffcf2;
-            border: 2px solid #fffcf2
+            background: var(--color-dark);
+            color:var(--color-light);
+            border: 2px solid var(--color-light)
         }
     }
 }

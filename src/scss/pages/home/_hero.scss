@@ -9,11 +9,11 @@
         margin: 0;
     
         & span{
-            color: var(--color-red);
+            color: var(--color-accent);
         }
     }
     &__description {
-        font-size: 1.5rem;
+        font-size: var(--font-size-3);
         font-weight: 400;
         color: var(--color-dark-600);
         margin: -0.2rem 0 0 0.3rem;
