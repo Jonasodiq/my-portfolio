@@ -1,19 +1,30 @@
+@use '../../utilities/responsive';
+
 .about {
     background-color: var(--color-light);
+
     &__inner {
         display: flex;
         justify-content: space-between;
         gap: var(--gap-m);
+
+        @include responsive.max(64rem) {
+            display: grid;
+        }
     }
+
     &__social {
         margin-top: 1rem;
     }
+
     &__content {
         max-width: 38.75rem;
     }
+
     &__title {
         margin: 0;
     }
+
     &__text {
         font-size: var(--font-size-3);
         line-height: 1.66;
