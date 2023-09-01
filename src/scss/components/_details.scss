@@ -1,0 +1,42 @@
+// Line
+@mixin separator($align: left, $margin: var(--gap-m)) {
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: var(--color-accent);
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    @if $align == center {
+      margin: $margin auto;
+    }
+  }
+}
+
+// Dots
+@mixin separatorDots() {
+  &::after {
+    content: url("assets/icons/icon-divider.svg");
+    display: block;
+    margin-top: var(--gap-s);
+  }
+}
+
+// square
+@mixin frame($color: var(--color-accent), $margin: 12px) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid $color;
+    top: $margin;
+    bottom: $margin;
+    left: $margin;
+    right: $margin;
+    opacity: 0.34;
+  }
+}

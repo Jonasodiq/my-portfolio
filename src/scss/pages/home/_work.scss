@@ -1,5 +1,6 @@
 .work {
     background-color: var(--color-light);
+
     &__header {
         margin-bottom: var(--gap-xxl);
         max-width: 40rem;
@@ -8,13 +9,15 @@
     &__title {
         margin: 0;
     }
+
     &__text {
         font-size: var(--font-size-3);
         line-height: 1.66;
     }
 
-    // Work Gallery
 }
+
+// Work Gallery
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -24,17 +27,20 @@
     &__item {
         overflow: hidden;
     }
+
     &__item:hover &__image {
-        transform: scale(1.5);
-     }
-    
-    &__item:nth-of-type(3) {
-       grid-row: span 2;
-       &:nth-of-type(4) {
-          grid-row: span 2;
-          grid-column: span 2;
-       }
+        transform: scale(1.2);
     }
+
+    &__item:nth-of-type(3) {
+        grid-row: span 2;
+
+        &:nth-of-type(4) {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+    }
+
     .gallery__image {
         display: block;
         height: 100%;
