@@ -1,11 +1,21 @@
-.hero, .work, .projects, .about{
+@use '../utilities/responsive';
+
+.hero,
+.work,
+.projects,
+.about {
     padding: 8rem 0;
     display: grid;
-    grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr); 
+    grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
+
+    @include responsive.max(64rem) {
+        padding: 6rem;
+    }
 }
 
-.hero__inner, .work__inner, .projects__inner, .about__inner {
+.hero__inner,
+.work__inner,
+.projects__inner,
+.about__inner {
     grid-column: inner;
 }
-
-
