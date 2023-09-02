@@ -48,7 +48,7 @@ a {
     text-decoration: none;
 
     &.arrow-link {
-        font-size: clamp(.8rem, 2.5vw, 3rem);
+        font-size: clamp(.8rem, 1vw, 1.5rem);
         display: flex;
         align-items: center;
         gap: var(--gap-s);
@@ -69,7 +69,7 @@ a {
 
             transform: translate(0, 0.15rem);
             transition: transform 0.2s;
-            width: clamp(.8rem, 3vw, 6rem);
+            width: clamp(.8rem, 2vw, 3rem);
         }
     }
 

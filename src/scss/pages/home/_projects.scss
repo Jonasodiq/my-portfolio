@@ -23,7 +23,7 @@
         color: var(--color-light);
         font-weight: 700;
         margin-top: 0;
-        font-size: clamp(1.5rem, 5vw, 6rem);
+        font-size: clamp(1.5rem, 3vw, 3rem);
     }
 }
 
@@ -45,7 +45,7 @@
         & p {
             color: var(--color-dark-600);
             line-height: 1.33;
-            font-size: clamp(.8rem, 3vw, 6rem);
+            font-size: clamp(.8rem, 1vw, 2rem);
         }
     }
     &__footer {
@@ -54,7 +54,7 @@
     &__title {
         color: var(--color-light);
         margin: 0;
-        font-size: clamp(1.5rem, 5vw, 6rem);
+        font-size: clamp(1.5rem, 2vw, 2rem);
     }
     &__image img {
         display: block;
@@ -68,7 +68,7 @@
         left: -16px;
     }
     &__permalink {
-        font-size: clamp(.8rem, 3vw, 6rem);;
+        font-size: clamp(.8rem, 1vw, 2rem);;
         font-weight: 700;
         transition: color 0.2s;
         &:hover {

@@ -10,14 +10,14 @@
 
     &__title {
         margin: 0;
-        font-size: clamp(2rem, 5vw, 6rem);
+        font-size: clamp(1rem, 3vw, 3rem);
         @include responsive.max( 1024px ) {
             text-align: center;
         }
     }
 
     &__text {
-        font-size: clamp(.8rem, 2vw, 2rem);
+        font-size: clamp(.8rem, 1.5vw, 1.5rem);
         line-height: 1.66;
         @include responsive.max( 424px ) {
             text-align: center;
