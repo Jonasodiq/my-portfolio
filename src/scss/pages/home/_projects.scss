@@ -1,3 +1,5 @@
+@use '../../utilities/responsive';
+
 /* Projects */
 .projects {
     &__header {
@@ -10,11 +12,18 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: var(--gap-xxl) var(--gap-l);
+
+        @include responsive.max( 324px ) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--gap-l) var(--gap-sm);
+        }
     }
+    
     &__title {
         color: var(--color-light);
-        font-weight: 400;
+        font-weight: 700;
         margin-top: 0;
+        font-size: clamp(1.5rem, 5vw, 6rem);
     }
 }
 
@@ -36,6 +45,7 @@
         & p {
             color: var(--color-dark-600);
             line-height: 1.33;
+            font-size: clamp(.8rem, 3vw, 6rem);
         }
     }
     &__footer {
@@ -44,6 +54,7 @@
     &__title {
         color: var(--color-light);
         margin: 0;
+        font-size: clamp(1.5rem, 5vw, 6rem);
     }
     &__image img {
         display: block;
@@ -57,6 +68,7 @@
         left: -16px;
     }
     &__permalink {
+        font-size: clamp(.8rem, 3vw, 6rem);;
         font-weight: 700;
         transition: color 0.2s;
         &:hover {

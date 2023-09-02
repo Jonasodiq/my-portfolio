@@ -7,14 +7,14 @@
         display: flex;
         justify-content: space-between;
         gap: var(--gap-m);
-
+        // 1024px
         @include responsive.max(64rem) {
             display: grid;
         }
     }
 
     &__social {
-        margin-top: 1rem;
+        margin: 2rem;
     }
 
     &__content {
@@ -22,11 +22,12 @@
     }
 
     &__title {
+        font-size: clamp(1.8rem, 5vw, 6rem);
         margin: 0;
     }
 
     &__text {
-        font-size: var(--font-size-3);
+        font-size: clamp(.8rem, 2vw, 3rem);
         line-height: 1.66;
     }
 }

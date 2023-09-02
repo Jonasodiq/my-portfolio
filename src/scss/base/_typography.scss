@@ -1,3 +1,5 @@
+@use '../utilities/responsive';
+
 h1,
 h2,
 h3,
@@ -46,11 +48,14 @@ a {
     text-decoration: none;
 
     &.arrow-link {
-        font-size: var(--font-size-3);
+        font-size: clamp(.8rem, 2.5vw, 3rem);
         display: flex;
         align-items: center;
         gap: var(--gap-s);
         transition: color 0.2s;
+        @include responsive.max( 1024px ) {
+            justify-content: center;
+        }
 
         &:hover {
             color: var(--color-dark);
@@ -61,8 +66,10 @@ a {
         }
 
         & svg {
+
             transform: translate(0, 0.15rem);
             transition: transform 0.2s;
+            width: clamp(.8rem, 3vw, 6rem);
         }
     }
 

@@ -1,18 +1,27 @@
+@use '../../utilities/responsive';
+
 .work {
     background-color: var(--color-light);
 
     &__header {
         margin-bottom: var(--gap-xxl);
-        max-width: 40rem;
+        max-width: 50rem;
     }
 
     &__title {
         margin: 0;
+        font-size: clamp(2rem, 5vw, 6rem);
+        @include responsive.max( 1024px ) {
+            text-align: center;
+        }
     }
 
     &__text {
-        font-size: var(--font-size-3);
+        font-size: clamp(.8rem, 2vw, 2rem);
         line-height: 1.66;
+        @include responsive.max( 424px ) {
+            text-align: center;
+        }
     }
 
 }
