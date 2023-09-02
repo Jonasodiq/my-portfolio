@@ -9,9 +9,6 @@
     }
 
     &__title {
-        font-size: var(--font-size-10);
-    }
-    &__title {
         font-size: clamp(5.25rem, -9.75rem + 50vw, 10.25rem);
 
         margin: 0;
@@ -19,10 +16,7 @@
         & span {
             color: var(--color-accent);
         }
-
-        @include responsive.max(64rem) {
-            font-size: var(--font-size-8);
-        }
+        
     }
 
     &__description {
