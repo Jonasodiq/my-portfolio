@@ -9,7 +9,7 @@
     grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
 
     @include responsive.max(64rem) {
-        padding: 6rem 0;
+        padding: 2rem;
     }
 }
 
