@@ -208,7 +208,7 @@ a.arrow-link--white:hover {
   .work,
   .projects,
   .about {
-    padding: 6rem 0;
+    padding: 2rem;
   }
 }
 
@@ -432,7 +432,9 @@ a.arrow-link--white:hover {
 }
 @media screen and (max-width: 64rem) {
   .about__inner {
-    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .about__social {
@@ -440,6 +442,12 @@ a.arrow-link--white:hover {
 }
 .about__content {
   max-width: 38.75rem;
+}
+@media screen and (max-width: 64rem) {
+  .about__content {
+    max-width: 20rem;
+    padding-bottom: 1rem;
+  }
 }
 .about__title {
   font-size: clamp(1.8rem, 2vw, 3rem);
