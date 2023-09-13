@@ -564,7 +564,7 @@ a.arrow-link--white:hover {
 }
 .work__header {
   margin-bottom: var(--gap-xxl);
-  max-width: 50rem;
+  max-width: 34rem;
 }
 .work__title {
   margin: 0;
