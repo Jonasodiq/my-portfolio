@@ -614,4 +614,8 @@ a.arrow-link--white:hover {
   cursor: pointer;
 }
 
+.projects__header-site {
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
