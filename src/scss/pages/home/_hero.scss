@@ -1,36 +1,35 @@
 @use '../../utilities/responsive';
 
 .hero {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    &__inner {
-        display: flex;
-        align-items: center;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: clamp(5.25rem, -9.75rem + 50vw, 10.25rem);
+
+    margin: 0;
+
+    & span {
+      color: var(--color-accent);
     }
+  }
 
-    &__title {
-        font-size: clamp(5.25rem, -9.75rem + 50vw, 10.25rem);
+  &__description {
+    font-size: clamp(1.25rem, 0.875rem + 1.25vw, 1.5rem);
+    font-weight: 400;
+    color: var(--color-dark-600);
+    margin: -0.2rem 0 0 0.3rem;
 
-        margin: 0;
-
-        & span {
-            color: var(--color-accent);
-        }
-        
+    & span {
+      color: var(--color-light);
     }
+  }
 
-    &__description {
-        font-size: clamp(1.25rem, 0.875rem + 1.25vw, 1.5rem);
-        font-weight: 400;
-        color: var(--color-dark-600);
-        margin: -0.2rem 0 0 0.3rem;
-
-        & span {
-            color: var(--color-light);
-        }
-    }
-
-    &__content {
-        color: var(--color-light);
-    }
+  &__content {
+    color: var(--color-light);
+  }
 }
