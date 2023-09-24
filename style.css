@@ -71,6 +71,10 @@ body {
   font-family: var(--font-sans);
 }
 
+.hero {
+  background: url(/assets/images/html-css.png), linear-gradient(to right, var(--color-dark) 0%, var(--color-dark));
+}
+
 img {
   max-width: 100%;
 }
@@ -438,14 +442,19 @@ a.arrow-link--white:hover {
   }
 }
 .about__social {
-  margin: 2rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 64rem) {
+  .about__social {
+    margin-top: 0;
+  }
 }
 .about__content {
   max-width: 38.75rem;
 }
 @media screen and (max-width: 64rem) {
   .about__content {
-    max-width: 20rem;
+    max-width: 18rem;
     padding-bottom: 1rem;
   }
 }
