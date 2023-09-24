@@ -1,24 +1,29 @@
 * {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-dark);
-    font-family:var(--font-sans)
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark);
+  font-family: var(--font-sans);
+}
+
+.hero {
+  background: url(/assets/images/html-css.png),
+    linear-gradient(to right, var(--color-dark) 0%, var(--color-dark));
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
