@@ -1,39 +1,42 @@
 @use '../../utilities/responsive';
 
 .about {
-    background-color: var(--color-light);
+  background-color: var(--color-light);
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        gap: var(--gap-m);
-        // 1024px
-        @include responsive.max(64rem) {
-           flex-direction: column;
-           justify-content: center;
-           align-items:center 
-        }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-m);
+    // 1024px
+    @include responsive.max(64rem) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
-    &__social {
-        margin: 2rem;
+  &__social {
+    margin-top: 3rem;
+    @include responsive.max(64rem) {
+      margin-top: 0;
     }
+  }
 
-    &__content {
-        max-width: 38.75rem;
-        @include responsive.max(64rem) {
-            max-width: 20rem;
-            padding-bottom: 1rem;
-        }
+  &__content {
+    max-width: 38.75rem;
+    @include responsive.max(64rem) {
+      max-width: 18rem;
+      padding-bottom: 1rem;
     }
+  }
 
-    &__title {
-        font-size: clamp(1.8rem, 2vw, 3rem);
-        margin: 0;
-    }
+  &__title {
+    font-size: clamp(1.8rem, 2vw, 3rem);
+    margin: 0;
+  }
 
-    &__text {
-        font-size: clamp(.8rem, 1.2vw, 2rem);
-        line-height: 1.66;
-    }
+  &__text {
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    line-height: 1.66;
+  }
 }
