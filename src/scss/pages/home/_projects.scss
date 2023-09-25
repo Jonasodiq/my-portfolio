@@ -7,15 +7,20 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    
+    @include responsive.max(64rem) {
+      margin-bottom: 1rem;
+    }
   }
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--gap-xxl) var(--gap-l);
+    text-align: justify;
 
-    @include responsive.max(324px) {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: var(--gap-l) var(--gap-sm);
+    @include responsive.max(916px) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--gap-l) var(--gap-l);
     }
   }
 

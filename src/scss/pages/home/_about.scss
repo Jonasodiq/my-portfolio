@@ -7,36 +7,82 @@
     display: flex;
     justify-content: space-between;
     gap: var(--gap-m);
-    // 1024px
-    @include responsive.max(64rem) {
+    
+    // 512px
+    @include responsive.max(32rem) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: var(--gap-sm);
     }
   }
 
   &__social {
-    margin-top: 3rem;
     @include responsive.max(64rem) {
       margin-top: 0;
     }
   }
 
+  &__menu-contact {
+    // 512px
+    @include responsive.max(32rem) {
+      text-align: center;
+    }
+    & p {
+      font-size: clamp(.7rem, 2vw, 2.5rem);
+    }
+  }
+
   &__content {
-    max-width: 38.75rem;
+    max-width: 30rem;
     @include responsive.max(64rem) {
-      max-width: 18rem;
       padding-bottom: 1rem;
     }
   }
 
   &__title {
-    font-size: clamp(1.8rem, 2vw, 3rem);
+    font-size: clamp(1rem, 4vw, 4rem);
     margin: 0;
+    // 512px
+    @include responsive.max(32rem) {
+      text-align: center;
+    }
   }
 
   &__text {
-    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    font-size: clamp(0.6rem, 1.5vw, 2rem);
     line-height: 1.66;
+  }
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--gap-sm);
+  // 640px
+  @include responsive.max(40rem) {
+    gap: var(--gap-s);
+  }
+
+  &__link {
+      background-color: var(--color-dark);
+      display: flex;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s;
+
+      @include responsive.max(384px) {
+        height: 35px;
+        width: 35px;
+      }
+
+      &:hover {
+          background-color: var(--color-accent);
+      }
   }
 }

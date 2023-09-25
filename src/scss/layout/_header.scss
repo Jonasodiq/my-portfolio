@@ -1,3 +1,5 @@
+@use '../utilities/responsive';
+
 .header {
     position: fixed;
     background-color: var(--color-dark);
@@ -7,6 +9,10 @@
     top: 0;
     z-index: 999;
     display: grid;
+
+    @include responsive.max(24rem) {
+        height: 70px;
+    }
 
     &__inner {
         max-width: 1280px;
@@ -28,6 +34,12 @@
         text-align: center;
         font-size: 30px;
         transition: color 0.4s;
+
+        @include responsive.max(24rem) {
+            width:  40px;
+            height: 40px;
+            font-size: 23px;
+        }
 
         &:hover {
             color: red;
@@ -51,6 +63,13 @@
         border-radius: 10px;
         transition: all 0.2s;
         margin: 0 1rem;
+
+        @include responsive.max(24rem) {
+            padding: 0.3rem .5rem 0.3rem;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1;
+        }
         
         &:hover {
             background: var(--color-dark);

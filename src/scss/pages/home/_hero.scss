@@ -2,6 +2,8 @@
 
 .hero {
   min-height: 100vh;
+  background: url(/assets/images/html-css.png),
+  linear-gradient(to right, var(--color-dark) 0%, var(--color-dark));
 
   &__inner {
     display: flex;

@@ -1,11 +1,24 @@
+@use '../utilities/responsive';
+
 .footer {
     min-height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @include responsive.max(640px) {
+        min-height: 100px;
+    }
+    @include responsive.max(384px) {
+        min-height: 70px;
+    }
+    
     &__content {
         color: var(--color-light-600);
+        text-align: center;
+        padding: 0 1rem;
+        font-size: clamp(.5rem, 2vw, 1.5rem);
     }
 }
     
