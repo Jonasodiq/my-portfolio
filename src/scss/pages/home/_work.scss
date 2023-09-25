@@ -7,31 +7,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin-bottom: var(--gap-xxl);
     max-width: 34rem;
 
     @include responsive.max(64rem) {
       margin-bottom: var(--gap-sm);
       max-width: auto;
-      text-align: center;
     }
   }
 
   &__title {
     margin: 0;
     font-size: clamp(1rem, 3vw, 3rem);
-    @include responsive.max(1024px) {
-      text-align: center;
-    }
   }
 
   &__text {
     font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     line-height: 1.66;
-    @include responsive.max(424px) {
-      text-align: center;
-    }
   }
 }
 
