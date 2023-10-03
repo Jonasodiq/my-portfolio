@@ -11,4 +11,4 @@ sass --watch src/scss/style.scss style.css
 **Description:**
 **I'm a consultant, freelancing designer and web developer trying to make the web a more beautiful place.**
 
-### [Link to](https://silver-my-portfolio.netlify.app/)
+### [Link to](https://my-easy-portfolio.netlify.app)
