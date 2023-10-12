@@ -24,6 +24,7 @@ const siteMenu = () => {
     menuButton.addEventListener('click', toggleMenu)
     hireButton.addEventListener('click', menuClosed)
     menuItem.addEventListener('click', menuClosed)
+
 }
 
 siteMenu()
