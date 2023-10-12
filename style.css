@@ -460,7 +460,7 @@ a.arrow-link--white:hover {
   justify-content: space-between;
   gap: var(--gap-m);
 }
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
   .about__inner {
     flex-direction: column;
     justify-content: center;
@@ -473,7 +473,7 @@ a.arrow-link--white:hover {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
   .about__menu-contact {
     text-align: center;
   }
@@ -482,18 +482,17 @@ a.arrow-link--white:hover {
   font-size: clamp(0.7rem, 2vw, 2.5rem);
 }
 .about__content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
   max-width: 30rem;
-}
-@media screen and (max-width: 64rem) {
-  .about__content {
-    padding-bottom: 1rem;
-  }
 }
 .about__title {
   font-size: clamp(1rem, 4vw, 4rem);
   margin: 0;
 }
-@media screen and (max-width: 32rem) {
+@media screen and (max-width: 40rem) {
   .about__title {
     text-align: center;
   }
@@ -501,6 +500,28 @@ a.arrow-link--white:hover {
 .about__text {
   font-size: clamp(0.6rem, 1.5vw, 2rem);
   line-height: 1.66;
+}
+
+#about__showPdf {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 0.5rem 0.7rem;
+  width: 6rem;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-2);
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+#about__showPdf:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+@media screen and (max-width: 40rem) {
+  #about__showPdf {
+    align-self: center;
+  }
 }
 
 .social {
