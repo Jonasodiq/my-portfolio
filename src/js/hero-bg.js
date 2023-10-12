@@ -3,8 +3,6 @@ for(let i = 0; i < parent.length; i++) {
   parent[i].style.width = parent[i].children[0].clientWidth + "px"; 
 };
 
-
-
 let words = ['create user-friendly and innovative websites', 'as a passionate and creative design developer', 'where I shape fantastic digital worlds', 'with a unique blend of skill and passion'],
     part,   // En variabel som kommer att innehålla en del av den aktuella frasen som visas.
     i = 0,  //  En indexvariabel som används för att hålla koll på den aktuella frasen i words-arrayen.
@@ -51,3 +49,13 @@ let wordflick = function () { // Detta är en funktion som implementerar själva
 $(document).ready(function () { // Detta är ingången till din JavaScript-kod. Det väntar tills dokumentet har laddats helt (när DOM är redo) och sedan anropar wordflick-funktionen för att börja animationen.
   wordflick();
 });
+
+// ***** Show PDF *****
+
+let pdfPopup;
+        
+document.getElementById("about__showPdf").addEventListener("click", function() {
+    // Öppna popup-fönstret när knappen klickas på
+    pdfPopup = window.open("./assets/CV-D.pdf", "_blank", "width=800, height=800");
+});
+
