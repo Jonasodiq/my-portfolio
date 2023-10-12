@@ -1,4 +1,5 @@
 @use '../../utilities/responsive';
+@use '../../components/buttons' as button;
 
 .about {
   background-color: var(--color-light);
@@ -8,13 +9,14 @@
     justify-content: space-between;
     gap: var(--gap-m);
     
-    // 512px
-    @include responsive.max(32rem) {
+    // 640px
+    @include responsive.max(40rem) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: var(--gap-sm);
     }
+
   }
 
   &__social {
@@ -24,8 +26,8 @@
   }
 
   &__menu-contact {
-    // 512px
-    @include responsive.max(32rem) {
+    // 640px
+    @include responsive.max(40rem) {
       text-align: center;
     }
     & p {
@@ -34,17 +36,18 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
     max-width: 30rem;
-    @include responsive.max(64rem) {
-      padding-bottom: 1rem;
-    }
   }
 
   &__title {
     font-size: clamp(1rem, 4vw, 4rem);
     margin: 0;
-    // 512px
-    @include responsive.max(32rem) {
+    // 640px
+    @include responsive.max(40rem) {
       text-align: center;
     }
   }
@@ -53,13 +56,22 @@
     font-size: clamp(0.6rem, 1.5vw, 2rem);
     line-height: 1.66;
   }
+
+}
+
+#about__showPdf {
+  @include button.default();
+  // 640px
+  @include responsive.max(40rem) {
+    align-self: center;
+  }
 }
 
 .social {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex;;
   gap: var(--gap-sm);
   // 640px
   @include responsive.max(40rem) {
