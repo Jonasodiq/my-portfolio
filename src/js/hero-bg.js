@@ -58,4 +58,5 @@ document.getElementById("about__showPdf").addEventListener("click", function() {
     // Öppna popup-fönstret när knappen klickas på
     pdfPopup = window.open("./assets/CV-D.pdf", "_blank", "width=800, height=800");
 });
+// This triggers a click event on the button
 
