@@ -468,7 +468,10 @@ a.arrow-link--white:hover {
     gap: var(--gap-sm);
   }
 }
-@media screen and (max-width: 64rem) {
+.about__social {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 40rem) {
   .about__social {
     margin-top: 0;
   }
@@ -517,6 +520,7 @@ a.arrow-link--white:hover {
 #about__showPdf:hover {
   background-color: var(--color-accent);
   color: var(--color-light);
+  cursor: pointer;
 }
 @media screen and (max-width: 40rem) {
   #about__showPdf {
