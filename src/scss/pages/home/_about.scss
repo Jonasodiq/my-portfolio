@@ -20,7 +20,8 @@
   }
 
   &__social {
-    @include responsive.max(64rem) {
+    margin-top: 3rem;
+    @include responsive.max(40rem) {
       margin-top: 0;
     }
   }
