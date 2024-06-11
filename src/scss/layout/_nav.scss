@@ -2,7 +2,6 @@
 @use '../utilities/responsive';
 
 .menu {
-
     @include responsive.max( 1024px ) {
         display: none;
     }
