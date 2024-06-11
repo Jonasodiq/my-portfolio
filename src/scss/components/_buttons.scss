@@ -18,5 +18,6 @@
     &:hover {
         background-color: $hover-background;
         color: $hover-color;
+        cursor: pointer;
     }
 }
