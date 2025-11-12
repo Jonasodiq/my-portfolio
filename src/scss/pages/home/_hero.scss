@@ -14,9 +14,9 @@
     left: 50%;
     position: absolute;
     z-index: -99;
-}
+  }
 
-&__animate-text {
+  &__animate-text {
     animation: text-scrolling 90s linear infinite;
     will-change: transform;
     display: block;
@@ -26,17 +26,17 @@
     &.left {
       animation-direction: reverse;
     }
-}
+  }
 
-&__span {
-  font-size: 50px;
-  color: transparent;
-  -webkit-text-stroke: 2px #333;
-  display: inline-block;
-  line-height: 1;
-  min-width: auto;
-  font-weight: 800;       
-}
+  &__span {
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 2px #333;
+    display: inline-block;
+    line-height: 1;
+    min-width: auto;
+    font-weight: 800;       
+  }
 
   &__inner {
     display: flex;
